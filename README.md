@@ -76,3 +76,19 @@ ex) git checkout -bnew-branch HEAD git checkout＜existing-branch＞new-branch e
  - 현재 브랜치 기반으로 추가 매개변수 줄 수 있음
 
 
+## git merge
+
+```
+# Start a new feature
+git checkout -b test2
+# Edit some files
+git add <file>
+git commit -m "Start a feature"
+# Edit some files
+git add <file>
+git commit -m "Finish a feature"
+# Merge in the new-feature branch
+git checkout main
+git merge test2
+git branch -d test2
+```
